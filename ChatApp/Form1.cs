@@ -18,9 +18,7 @@ using System.Diagnostics;
 namespace ChatApp
 {
     public partial class Timelapse : Form
-    {
-        //public static FileStream fs = new FileStream(@"C:\Users\Thokozile\source\repos\ChatApp\ChatApp\bin\Debug\Text.txt", FileMode.OpenOrCreate, FileAccess.Write);
-        //public StreamWriter m_streamWriter = new StreamWriter(fs);
+    {     
 
         Socket sck;
         EndPoint endpointLocal, endpointRemote;
@@ -54,16 +52,7 @@ namespace ChatApp
             // get user IP
             textLocalIP.Text = GetLocalIp();
             textRemoteIP.Text = GetLocalIp();
-
-           
-            // Write to the file using StreamWriter class
-            //m_streamWriter.BaseStream.Seek(0, SeekOrigin.End);
-            //m_streamWriter.Write("File Write Operation Starts: ");
-            //m_streamWriter.WriteLine("{0} {1}",
-            //DateTime.Now.ToLongTimeString(), DateTime.Now.ToLongDateString());
-            //m_streamWriter.WriteLine("===================================== \n");
-            //m_streamWriter.Flush();
-        
+          
     }
 
         private string GetLocalIp()
@@ -197,12 +186,12 @@ namespace ChatApp
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            Timer.Enabled = true;
+            //Timer.Enabled = true;
         }
 
         private void buttonStop_Click(object sender, EventArgs e)
         {
-            Timer.Enabled = false;
+            //Timer.Enabled = false;
         }
 
     }
